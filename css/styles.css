@@ -1,0 +1,98 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Specifics CSS*/
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+.header{
+    height: 250px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items:  center;
+    background: linear-gradient(to right bottom, #457b9d, #3a698c, #30577a, #264669, #1d3557);
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #FFF;
+    text-shadow: 2px 2px 2px #000;
+     
+
+}
+
+.header__title{
+    margin-bottom: 10px;
+    font-size: 2em;
+    font-weight: bold;
+
+
+}
+
+.header__parag{
+    font-size: 1.1em;
+    line-height: 1.5em;
+
+}
+
+.main-nav{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    position: sticky;
+    top: 0;
+    background-color: hsl(203, 39%, 44%);
+
+}
+
+.main-nav__item{
+    color: #F1FAEE;
+    text-align: center;
+    text-shadow: 2px 2px 2px #000;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-right: 1px solid #F1FAEE
+
+}
+
+.main-nav__item:hover{
+    background-color: hsl(215, 50%, 23%);
+}
